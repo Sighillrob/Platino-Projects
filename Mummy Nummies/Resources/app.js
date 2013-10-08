@@ -69,7 +69,7 @@ var instructions = Ti.UI.createImageView({
 	});
 
 var closeHighcore = Ti.UI.createImageView({
-		image : '/images/redx.png',
+		image : '/images/exit.png',
 		top : 5,
 		right : 10,
 		width : 25,
