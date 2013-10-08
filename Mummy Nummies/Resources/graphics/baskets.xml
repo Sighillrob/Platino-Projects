@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Imageset Name="baskets" Imagefile="graphics/baskets.png" NativeHorzRes="128" NativeVertRes="256" AutoScaled="false">
-    <Image Name="basket" XPos="2" YPos="2" Width="66" Height="76"/>
-    <Image Name="superbasket" XPos="2" YPos="80" Width="90" Height="76"/>
-</Imageset>
