@@ -266,7 +266,7 @@ var unpause = Titanium.UI.createButton({
   	 	top:5,
   	 	right:5,
   	 	left:5,
-  	 	title: "Don't Stop'"
+  	 	title: "C'mon Try Again!"
 });
 
 var btnquit = Titanium.UI.createButton({
