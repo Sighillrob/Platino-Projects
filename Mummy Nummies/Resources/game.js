@@ -28,7 +28,13 @@ var TOUCH_SCALE = 1;
 
 // Create sprites and add to the scene
 var background = platino.createSprite(
-  {image:'images/gamebg.png', x:0, y:0}
+  {
+      image:'images/gamebg.png',
+       x:0, 
+       y:0,
+       width: Ti.Platform.displayCaps.platformWidth, // resize background to fit any screen size
+       height: Ti.Platform.displayCaps.platformHeight
+  }
 );
 
 var character = platino.createSprite({image:'images/mummy.png', x:215, y:372});
@@ -441,10 +447,17 @@ game.addEventListener('onload', function(e) {
      if (game.screen.width != 320){
     	scene.remove(background);
     	var bg2 = platino.createSprite(
-  			{image:'images/gamebg2x.png', x:0, y:0,z:0}
+  			{
+  			    image:'images/gamebg2x.png',
+  			    x:0,
+  			    y:0,
+  			    z:0,
+  			    width: Ti.Platform.displayCaps.platformWidth, // resize background to fit any screen size
+                height: Ti.Platform.displayCaps.platformHeight
+  			}
 			);
     	scene.add(bg2);
-    scaleYdifferance = 400;
+        scaleYdifferance = 400;
     	character.y = character.y + scaleYdifferance;
     	playersBasket.y = playersBasket.y + scaleYdifferance;
     	catchYzone = catchYzone + scaleYdifferance;

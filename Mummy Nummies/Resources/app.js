@@ -9,13 +9,17 @@ var gamemusic = Ti.Media.createSound({url:"sounds/digestivebiscuit.mp3", looping
 
 var image = Ti.UI.createImageView({
   image:'/images/start.png',
-  zIndex:0
+  zIndex:0,
+  width: Ti.Platform.displayCaps.platformWidth, // resize background to fit any screen size
+  height: Ti.Platform.displayCaps.platformHeight
   
 });
 
 var image2 = Ti.UI.createImageView({
   image:'/images/start2.png',
-  zIndex:0
+  zIndex:0,
+  width: Ti.Platform.displayCaps.platformWidth, // resize background to fit any screen size
+  height: Ti.Platform.displayCaps.platformHeight
   
 });
 
