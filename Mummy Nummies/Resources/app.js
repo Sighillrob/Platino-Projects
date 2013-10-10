@@ -1,3 +1,7 @@
+//Add Physice to objects missed when they hit the ground....
+//Celebrate with particles   i.e fireworks.
+
+
 
 var gamestartWindow = Ti.UI.createWindow({backgroundColor:'black'});
 
